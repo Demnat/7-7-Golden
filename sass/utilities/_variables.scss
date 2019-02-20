@@ -1,0 +1,26 @@
+@import url('https://db.onlinewebfonts.com/c/d6ced0df95b7cc53e0eae88817930d08?family=Wisdom+Script+AI');
+@import url('https://db.onlinewebfonts.com/c/07689d4eaaa3d530d58826b5d7f84735?family=Montserrat');
+@import url('https://db.onlinewebfonts.com/c/a2e7305a0ba8bb7091124f4cd1485fc9?family=Droid+Serif');
+
+/* Media - breakpoints */
+$breakpoints: (
+  phone: 320px,
+  tablet: 768px,
+  oldDesktop: 992px,
+  desktop: 1200px
+);
+
+
+/* Colors */
+$logoColor: #fed136;
+$mainMenuColor: #fff;
+
+/* Font sizes */
+
+
+/* Fonts */
+$logoFont: 26px/41px 'Wisdom Script AI', sans-serif;
+$mainMenuFont: 14px/41px 'Montserrat', sans-serif;
+$welcomeHeaderFont: 40px 'Droid Serif', serif;
+$mainHeaderFont: bold 75px 'Montserrat', sans-serif;
+$homeButtonFont: bold 18px 'Montserrat', sans-serif;

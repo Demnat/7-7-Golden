@@ -1,0 +1,11 @@
+.welcomeHeader {
+    margin: 0;
+    padding: 0;
+    font: $welcomeHeaderFont;
+    color: $mainMenuColor;
+    text-align: center;
+
+    @include media ('>phone','<tablet') {
+        font-size: 30px;    
+    }
+}

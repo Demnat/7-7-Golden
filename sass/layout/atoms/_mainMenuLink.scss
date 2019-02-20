@@ -1,0 +1,16 @@
+.mainMenuLink {
+    font: $mainMenuFont;
+    color: $mainMenuColor;
+    text-decoration: none;
+    &:hover {
+        color: $logoColor;
+    }
+
+    @include media ('>phone','<oldDesktop') {
+        font-size: 20px;    
+    }
+
+    @include media ('<550px') {
+        font-size: 16px;
+    }
+}

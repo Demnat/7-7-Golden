@@ -1,0 +1,24 @@
+.homeSection {
+    background-image: url("https://images.pexels.com/photos/593316/pexels-photo-593316.jpeg?cs=srgb&dl=apple-devices-camera-computer-593316.jpg&fm=jpg");
+    background-size: cover;
+    max-height: 700px;
+
+    &-tint {
+        background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+    
+    &-header {
+        padding: 40px 0 185px 0;
+
+        @include media ('>phone', '<desktop') {
+            padding: 40px 10px 120px 10px;    
+        }
+    }
+
+    &-main {
+        padding: 0 0 154px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

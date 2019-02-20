@@ -1,0 +1,12 @@
+.mainHeader {
+    margin: 0;
+    padding: 30px 0 40px 0;
+    font: $mainHeaderFont;
+    color: $mainMenuColor;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include media ('>phone','<tablet') {
+        font-size: 45px;    
+    }
+}
