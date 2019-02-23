@@ -988,6 +988,7 @@ body {
   padding: 0;
   font: 16px "Droid Serif", serif;
   color: #777;
+  text-align: center;
 }
 
 .servicesIcons {
@@ -1007,20 +1008,62 @@ body {
   transform: rotate(360deg);
 }
 
-.servicesHeader {
+.elementHeader {
   margin: 0;
   padding: 0;
   font: bold 18px "Montserrat", sans-serif;
   color: #222;
   text-align: center;
+  background-color: #fff;
 }
 
-.sectionText {
+.elementText {
   margin: 0;
   padding: 0;
   font: 14px "Roboto Slab", sans-serif;
   color: #777;
   text-align: center;
+  background-color: #fff;
+}
+
+.portfolioImg {
+  width: 100%;
+  height: auto;
+}
+
+.aboutUsImg {
+  width: 100%;
+  height: auto;
+  border: 7px solid #f1f1f1;
+  border-radius: 50%;
+}
+
+.continue {
+  padding: 40px 0;
+  width: 194px;
+  height: 194px;
+  display: flex;
+  justify-content: center;
+  border: 7px solid #f1f1f1;
+  border-radius: 50%;
+  background-color: #fed136;
+  color: #fff;
+  font: bold 18px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: 321px) and (max-width: 1199px) {
+  .continue {
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1199px) {
+  .continue {
+    padding: 30px 0;
+  }
 }
 
 .homeSection {
@@ -1060,12 +1103,83 @@ body {
   align-content: center;
 }
 
-.servicesSection-servicesHeader {
+.servicesSection-elementHeader {
   padding: 25px 0 15px 0;
 }
 
-.servicesSection-sectionText {
+.servicesSection-elementText {
   padding: 0 10px;
+}
+
+.portfolioSection {
+  padding: 120px 0;
+  background-color: #f7f7f7;
+}
+
+.portfolioSection-headers {
+  padding: 0 0 30px 0;
+  flex-direction: column;
+  align-content: center;
+}
+
+.portfolioSection-column {
+  padding: 50px 13px 0 13px;
+}
+
+.portfolioSection-column-elementHeader {
+  padding: 30px 0 0 0;
+  background-color: #fff;
+}
+
+.portfolioSection-column-elementText {
+  padding: 0 0 30px 0;
+  background-color: #fff;
+}
+
+.aboutUsSection {
+  padding: 120px 0;
+}
+
+.aboutUsSection-headers {
+  padding: 0 0 80px 0;
+  flex-direction: column;
+  align-content: center;
+}
+
+.aboutUsSection-elementHeader-data {
+  text-transform: uppercase;
+}
+
+.aboutUsSection-elementHeader--left {
+  padding: 0 40px 0 0;
+  text-align: right;
+}
+
+.aboutUsSection-elementHeader--right {
+  padding: 0 0 0 40px;
+  text-align: left;
+}
+
+.aboutUsSection-elementText--left {
+  padding: 20px 40px 0 0;
+  text-align: right;
+}
+
+.aboutUsSection-elementText--right {
+  padding: 20px 0 0 40px;
+  text-align: left;
+}
+
+.aboutUsSection-column {
+  height: 90px;
+}
+
+.aboutUsSection-column:first-child {
+  border-right: 1px solid #f1f1f1;
+}
+
+.aboutUsSection-column:last-child {
+  border-left: 1px solid #f1f1f1;
 }
 
 .styleguide {

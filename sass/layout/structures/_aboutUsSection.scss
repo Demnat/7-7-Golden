@@ -1,0 +1,53 @@
+.aboutUsSection {
+    padding: 120px 0;
+    
+    &-headers {
+        padding: 0 0 80px 0;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    &-elementHeader {
+        
+        
+        &-data {
+            text-transform: uppercase;
+        }
+
+        &--left {
+            padding:  0 40px 0 0;
+            text-align: right;
+        }
+
+        &--right {
+            padding: 0 0 0 40px;
+            text-align: left;
+        }
+    }
+
+    &-elementText {
+        
+        
+        &--left {
+            padding: 20px 40px 0 0;
+            text-align: right;
+        }
+
+        &--right {
+            padding: 20px 0 0 40px;
+            text-align: left;
+        }
+    }
+
+    &-column {
+        height: 90px;
+        
+        &:first-child {
+            border-right: 1px solid $borderImgAboutUSColor;
+        }
+
+        &:last-child {
+            border-left: 1px solid $borderImgAboutUSColor;
+        }
+    }
+}    
