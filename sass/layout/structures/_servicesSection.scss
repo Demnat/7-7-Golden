@@ -1,0 +1,26 @@
+.servicesSection {
+    padding: 120px 0;
+
+    &-headers {
+        padding: 0 0 80px;
+        flex-direction: column;
+        align-content: center;
+     
+    }
+
+    // pomocniczo - próba sterowania ikoną bez dodatkowego divka
+    // zostaje dodać dodatkowy kontener na i  :( ?
+    // &-main {
+    //     flex-direction: column;
+    //     align-content: center;
+    //     justify-content: center;
+    // }
+
+    &-servicesHeader {
+        padding:  25px 0 15px 0;
+    }
+
+    &-sectionText {
+        padding: 0 10px;
+    }
+}

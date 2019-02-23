@@ -1,6 +1,7 @@
 @import url('https://db.onlinewebfonts.com/c/d6ced0df95b7cc53e0eae88817930d08?family=Wisdom+Script+AI');
 @import url('https://db.onlinewebfonts.com/c/07689d4eaaa3d530d58826b5d7f84735?family=Montserrat');
 @import url('https://db.onlinewebfonts.com/c/a2e7305a0ba8bb7091124f4cd1485fc9?family=Droid+Serif');
+@import url('https://db.onlinewebfonts.com/c/db2395c9dd1e4b8d2446bfcd49758984?family=Roboto+Slab');
 
 /* Media - breakpoints */
 $breakpoints: (
@@ -14,6 +15,8 @@ $breakpoints: (
 /* Colors */
 $logoColor: #fed136;
 $mainMenuColor: #fff;
+$sectionHeaderColor: #222;
+$sectionSubHeaderColor: #777;
 
 /* Font sizes */
 
@@ -24,3 +27,6 @@ $mainMenuFont: 14px/41px 'Montserrat', sans-serif;
 $welcomeHeaderFont: 40px 'Droid Serif', serif;
 $mainHeaderFont: bold 75px 'Montserrat', sans-serif;
 $homeButtonFont: bold 18px 'Montserrat', sans-serif;
+$sectionHeaderFont: bold 40px 'Montserrat', sans-serif;
+$sectionSubHeaderFont: 16px 'Droid Serif', serif;
+$sectionTextFont: 14px 'Roboto Slab', sans-serif;
