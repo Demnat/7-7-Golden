@@ -1,0 +1,11 @@
+.footerText {
+    padding: 0 210px 0 0;
+    font: $footerTextFont;
+    color: $footerTextColor;
+
+    @include media ('>phone', '<oldDesktop') {
+        padding: 0 0 20px 0;
+        width: 100%;  
+        text-align: center;
+    }
+}
