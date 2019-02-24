@@ -1,0 +1,78 @@
+.contactForm {
+
+    &-inputContainer {
+        padding: 0 20px 30px 0;
+
+        &:last-child {
+            padding: 0 20px 0 0;
+
+            @include media ('>phone', '<desktop') {
+                padding: 0 20px 30px 20px;    
+            }
+        }
+
+        &-input, .contactForm-textareaContainer-textarea { //czemu tutaj nie czyta textarea?
+            padding: 20px;
+            width: 100%;
+            font: $inputTextFont;
+            border-radius: 3px;
+            border: 1px solid $inputBorderColor;
+
+            &::placeholder {
+                color: $inputTextColor;
+                text-transform: uppercase;
+            }
+        }
+
+        @include media ('>phone', '<desktop') {
+            padding: 0 20px 30px 20px;    
+        }
+    }
+
+    &-textareaContainer {
+        padding: 0 0 0 20px;
+        height: 240px;
+
+        &-textarea {
+            resize: none;
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            font: $inputTextFont;
+            border-radius: 3px;
+            border: 1px solid $inputBorderColor;
+
+            &::placeholder {
+                color: $inputTextColor;
+                text-transform: uppercase;
+            }
+        }
+
+        @include media ('>phone', '<desktop') {
+            padding: 0 20px 0 20px;    
+        }
+    }
+
+    &-buttonContainer {
+        padding: 30px 0 0 0;
+        justify-content: center;
+        //czy można rozszerzać o klasę z innego pliku w innym katalogu?
+        .contactButton {
+            padding: 25px 50px;
+            font: $homeButtonFont;
+            color: $mainMenuColor;
+            text-transform: uppercase;
+            text-align: center;
+            border: none;
+            border-radius: 3px;
+            background-color: $logoColor;
+            
+            &:hover {
+                cursor: pointer;
+                background-color: $mainMenuColor;
+                color: $logoColor;
+            }
+        }
+    }
+    
+}

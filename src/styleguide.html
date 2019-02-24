@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Golden - styleguide</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- <link rel="stylesheet" type="text/css" href="vendor/fontello-9f37fb7e/css/fontello.css"> -->
     <link rel="stylesheet" type="text/css" href="./../css/style.css">
 </head>
@@ -22,12 +23,15 @@
     <i class="servicesIcons fas fa-shopping-basket"></i>
     <h6 class="elementHeader">E-commerce</h6>
     <p class="elementText">Aliquam erat ac ipsum. Integer aliquam purus.</p>
-    <!-- <img class="portfolioImg" src="https://via.placeholder.com/290x300"></img> -->
-    <!-- <img class="aboutUsImg" src="https://via.placeholder.com/180" alt=""></img> -->
+    <!-- <img class="portfolioImg" src="https://via.placeholder.com/290x300"/> -->
+    <!-- <img class="aboutUsImg" src="https://via.placeholder.com/180" alt=""/> -->
     <span class="continue">Our<br>story<br>continues<br>...</span>
+    <p class="teamSectionText">Aliquam erat ac ipsum. Integer aliquam purus.</p>
+    <!-- <img class="teamImg" src="https://via.placeholder.com/220" alt=""/> -->
+    <i class="socialIcons socialIcons--twitter fab fa-twitter"></i><i
+        class="socialIcons socialIcons--facebook fab fa-facebook-f"></i>
 
     <!-- MOLECULES -->
-    <h1 class="logo"><a href="#" class="logoLink">Golden</a></h1>
     <ul class="mainMenu">
         <li class="mainMenu-item">
             <a href="#" class="mainMenuLink mainMenu-item-link">Home</a>
@@ -45,10 +49,35 @@
             <a href="#" class="mainMenuLink mainMenu-item-link">Contact</a>
         </li>
     </ul>
-    
+
+    <form action="" class="container contactForm">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div class="container contactForm-inputContainer">
+                    <input class="contactForm-inputContainer-input" type="text" name="name" placeholder="Your Name *">
+                </div>
+                <div class="container contactForm-inputContainer">
+                    <input class="contactForm-inputContainer-input" type="email" name="email" placeholder="Your e-mail *">
+                </div>
+                <div class="container contactForm-inputContainer">
+                    <input class="contactForm-inputContainer-input" type="text" name="subject" placeholder="subject">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div class="container contactForm-textareaContainer">
+                    <textarea class="contactForm-textareaContainer-textarea" placeholder="Your message *"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row contactForm-buttonContainer">
+            <button class="contactButton" type="submit">Send message</button>
+        </div>
+    </form>
+
     <!-- ORGANISM / COMPONENTS -->
     <!-- TEMPLATES / SECTIONS -->
     <!-- PAGES -->
-    
+
 </body>
+
 </html>

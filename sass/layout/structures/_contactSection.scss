@@ -1,0 +1,16 @@
+.contactSection {
+    padding: 120px 0;
+    background-image: url("https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?cs=srgb&dl=earth-lights-world-41949.jpg&fm=jpg");
+
+    &-headers {
+        padding: 0 0 80px 0;
+        flex-direction: column;
+        align-content: center;
+
+        &-sectionHeader {
+            &--white {
+                color: $mainMenuColor;
+            }
+        }
+    }
+}
