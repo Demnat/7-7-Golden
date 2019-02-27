@@ -8,27 +8,28 @@
         align-content: center;
     }
 
-    &-column {
-        padding: 50px 13px 0 13px;
-        display: flex;
-        flex-direction: column;
-        //czym ruszyć img z miejsca???? dodatkowy kontener?
-        // flex-direction: column;
-        align-content: center;
+    &-teamContainer {
         justify-content: center;
-        
-        &-socialIconsContainer {
-            display: flex;
-            justify-content: center;
-        }
 
-        &-elementHeader {
-            padding:  30px 0 0 0;   
+        &-elementContainer {
+            padding: 50px 13px 0 13px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            &-socialIconsContainer {
+                display: flex;
+                justify-content: center;
+            }
+
+            &-elementHeader {
+                padding:  30px 0 0 0;   
+            }
+        
+            &-elementText {
+                padding: 0 0 30px 0;         
+            }       
         }
-    
-        &-elementText {
-            padding: 0 0 30px 0;         
-        }       
     }
    
     &-teamSectionText {

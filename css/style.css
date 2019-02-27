@@ -1027,6 +1027,7 @@ body {
 .portfolioImg {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .aboutUsImg {
@@ -1034,6 +1035,13 @@ body {
   height: auto;
   border: 7px solid #f1f1f1;
   border-radius: 50%;
+  display: block;
+}
+
+@media (min-width: 321px) and (max-width: 1199px) {
+  .aboutUsImg {
+    max-width: 200px;
+  }
 }
 
 .continue {
@@ -1248,16 +1256,23 @@ body {
 }
 
 .servicesSection-headers {
-  padding: 0 0 80px;
+  padding: 0 0 80px 0;
   flex-direction: column;
   align-content: center;
 }
 
-.servicesSection-elementHeader {
+.servicesSection-servicesContainer-main {
+  padding: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicesSection-servicesContainer-main-elementHeader {
   padding: 25px 0 15px 0;
 }
 
-.servicesSection-elementText {
+.servicesSection-servicesContainer-main-elementText {
   padding: 0 10px;
 }
 
@@ -1272,16 +1287,32 @@ body {
   align-content: center;
 }
 
-.portfolioSection-column {
-  padding: 50px 13px 0 13px;
+.portfolioSection-folioContainer {
+  justify-content: space-between;
 }
 
-.portfolioSection-column-elementHeader {
+@media (min-width: 321px) and (max-width: 767px) {
+  .portfolioSection-folioContainer {
+    justify-content: center;
+  }
+}
+
+.portfolioSection-folioContainer-elementContainer {
+  padding: 50px 0 0 0;
+}
+
+@media (min-width: 321px) and (max-width: 767px) {
+  .portfolioSection-folioContainer-elementContainer {
+    padding: 50px 20px 0 20px;
+  }
+}
+
+.portfolioSection-folioContainer-elementContainer-elementHeader {
   padding: 30px 0 0 0;
   background-color: #fff;
 }
 
-.portfolioSection-column-elementText {
+.portfolioSection-folioContainer-elementContainer-elementText {
   padding: 0 0 30px 0;
   background-color: #fff;
 }
@@ -1296,40 +1327,90 @@ body {
   align-content: center;
 }
 
-.aboutUsSection-elementHeader-data {
+.aboutUsSection-element {
+  padding: 0 0 90px 0;
+}
+
+.aboutUsSection-element::after {
+  width: 2px;
+  height: 90px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: #f1f1f1;
+}
+
+@media (min-width: 321px) and (max-width: 767px) {
+  .aboutUsSection-element .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutUsSection-element .main .aboutUsImg {
+    margin: 20px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 991px) {
+  .aboutUsSection-element {
+    padding: 30px 0 30px 0;
+  }
+  .aboutUsSection-element::after {
+    display: none;
+  }
+}
+
+.aboutUsSection-element-elementHeader-data {
   text-transform: uppercase;
 }
 
-.aboutUsSection-elementHeader--left {
+.aboutUsSection-element-elementHeader--left {
   padding: 0 40px 0 0;
   text-align: right;
 }
 
-.aboutUsSection-elementHeader--right {
+@media (min-width: 321px) and (max-width: 991px) {
+  .aboutUsSection-element-elementHeader--left {
+    padding: 0 20px;
+    text-align: center;
+  }
+}
+
+.aboutUsSection-element-elementHeader--right {
   padding: 0 0 0 40px;
   text-align: left;
 }
 
-.aboutUsSection-elementText--left {
+@media (min-width: 321px) and (max-width: 991px) {
+  .aboutUsSection-element-elementHeader--right {
+    padding: 0 20px;
+    text-align: center;
+  }
+}
+
+.aboutUsSection-element-elementText--left {
   padding: 20px 40px 0 0;
   text-align: right;
 }
 
-.aboutUsSection-elementText--right {
+@media (min-width: 321px) and (max-width: 991px) {
+  .aboutUsSection-element-elementText--left {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.aboutUsSection-element-elementText--right {
   padding: 20px 0 0 40px;
   text-align: left;
 }
 
-.aboutUsSection-column {
-  height: 90px;
-}
-
-.aboutUsSection-column:first-child {
-  border-right: 1px solid #f1f1f1;
-}
-
-.aboutUsSection-column:last-child {
-  border-left: 1px solid #f1f1f1;
+@media (min-width: 321px) and (max-width: 991px) {
+  .aboutUsSection-element-elementText--right {
+    padding: 20px;
+    text-align: center;
+  }
 }
 
 .teamSection {
@@ -1343,24 +1424,27 @@ body {
   align-content: center;
 }
 
-.teamSection-column {
+.teamSection-teamContainer {
+  justify-content: center;
+}
+
+.teamSection-teamContainer-elementContainer {
   padding: 50px 13px 0 13px;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  align-items: center;
 }
 
-.teamSection-column-socialIconsContainer {
+.teamSection-teamContainer-elementContainer-socialIconsContainer {
   display: flex;
   justify-content: center;
 }
 
-.teamSection-column-elementHeader {
+.teamSection-teamContainer-elementContainer-elementHeader {
   padding: 30px 0 0 0;
 }
 
-.teamSection-column-elementText {
+.teamSection-teamContainer-elementContainer-elementText {
   padding: 0 0 30px 0;
 }
 
@@ -1369,12 +1453,16 @@ body {
 }
 
 .brandsSection {
-  padding: 60px 0;
+  padding: 30px 0 60px 0;
 }
 
 .brandsSection-brands {
   display: flex;
   justify-content: center;
+}
+
+.brandsSection-brands-img {
+  padding: 30px 0 0 0;
 }
 
 .contactSection {

@@ -1,8 +1,12 @@
 .brandsSection {
-    padding: 60px 0;
+    padding: 30px 0 60px 0;
 
     &-brands {
         display: flex;
         justify-content: center;
+
+        &-img {
+            padding: 30px 0 0 0;
+        }
     }
 }

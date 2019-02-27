@@ -7,47 +7,89 @@
         align-content: center;
     }
 
-    &-elementHeader {
+    &-element {
+        padding: 0 0 90px 0;
         
-        
-        &-data {
-            text-transform: uppercase;
+        &::after {
+            width: 2px;
+            height: 90px;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            background-color: $borderImgAboutUSColor;
         }
 
-        &--left {
-            padding:  0 40px 0 0;
-            text-align: right;
+        @include media ('>phone','<tablet') {
+           .main {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+
+               .aboutUsImg {
+                   margin: 20px;
+               }
+           }
         }
 
-        &--right {
-            padding: 0 0 0 40px;
-            text-align: left;
-        }
-    }
+        @include media ('>phone','<oldDesktop') {
+            padding: 30px 0 30px 0;
 
-    &-elementText {
-        
-        
-        &--left {
-            padding: 20px 40px 0 0;
-            text-align: right;
+            &::after {
+                display: none;
+            }
         }
 
-        &--right {
-            padding: 20px 0 0 40px;
-            text-align: left;
-        }
-    }
+        &-elementHeader {
+                        
+            &-data {
+                text-transform: uppercase;
+            }
 
-    &-column {
-        height: 90px;
-        
-        &:first-child {
-            border-right: 1px solid $borderImgAboutUSColor;
+            &--left {
+                padding:  0 40px 0 0;
+                text-align: right;
+                
+                @include media ('>phone','<oldDesktop') {
+                    padding: 0 20px;
+                    text-align: center;
+                }
+            }
+
+            &--right {
+                padding: 0 0 0 40px;
+                text-align: left;
+
+                @include media ('>phone','<oldDesktop') {
+                    padding: 0 20px;
+                    text-align: center;
+                }
+            }
+
+            
         }
 
-        &:last-child {
-            border-left: 1px solid $borderImgAboutUSColor;
+        &-elementText {
+                        
+            &--left {
+                padding: 20px 40px 0 0;
+                text-align: right;
+                
+                @include media ('>phone','<oldDesktop') {
+                    padding: 20px;
+                    text-align: center;
+                }
+            }
+
+            &--right {
+                padding: 20px 0 0 40px;
+                text-align: left;
+
+                @include media ('>phone','<oldDesktop') {
+                    padding: 20px;
+                    text-align: center;
+                }
+            }
         }
     }
 }    

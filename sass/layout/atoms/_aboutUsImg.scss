@@ -3,9 +3,12 @@
     height: auto;
     border: 7px solid $borderImgAboutUSColor;
     border-radius: 50%;
+    display: block;
 
-    // @include media ('>phone','<desktop') {
-    //     margin: 0 auto;
-    //     max-width: 400px; 
-    // }
+    @include media ('>phone','<desktop') {
+        // margin: 0 auto;
+        max-width: 200px; 
+    }
+
+    
 }
